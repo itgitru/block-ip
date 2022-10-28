@@ -1,0 +1,126 @@
+#
+# rules.before
+#
+# Rules that should be run before the ufw command line added rules. Custom
+# rules should be added to one of these chains:
+#   ufw-before-input
+#   ufw-before-output
+#   ufw-before-forward
+#
+
+# Don't delete these required lines, otherwise there will be errors
+*filter
+:ufw-before-input - [0:0]
+:ufw-before-output - [0:0]
+:ufw-before-forward - [0:0]
+:ufw-not-local - [0:0]
+# End required lines
+
+#spamer ip
+-A ufw-before-input -s 89.253.238.125 -j DROP
+-A ufw-before-input -s 45.8.126.20 -j DROP
+-A ufw-before-input -s 81.29.143.139 -j DROP
+-A ufw-before-input -s 91.107.126.240 -j DROP
+-A ufw-before-input -s 176.99.3.26 -j DROP
+-A ufw-before-input -s 185.229.9.241 -j DROP
+-A ufw-before-input -s 91.107.126.254 -j DROP
+-A ufw-before-input -s 46.8.210.0/24 -j DROP
+-A ufw-before-input -s 84.54.36.56 -j DROP
+-A ufw-before-input -s 185.173.179.229 -j DROP
+-A ufw-before-input -s 89.253.218.32 -j DROP
+-A ufw-before-input -s 69.169.231.0/24 -j DROP
+-A ufw-before-input -s 46.8.210.70 -j DROP
+-A ufw-before-input -s 89.253.238.107 -j DROP
+-A ufw-before-input -s 176.124.192.66 -j DROP
+-A ufw-before-input -s 78.108.93.115 -j DROP
+-A ufw-before-input -s 2.56.59.48 -j DROP
+-A ufw-before-input -s 185.173.176.0/24 -j DROP
+-A ufw-before-input -s 188.166.252.10 -j DROP
+-A ufw-before-input -s 193.106.175.25 -j DROP
+-A ufw-before-input -s 194.226.139.106 -j DROP
+-A ufw-before-input -s 195.133.46.4 -j DROP
+-A ufw-before-input -s 185.173.179.243 -j DROP
+-A ufw-before-input -s 185.173.176.98 -j DROP
+-A ufw-before-input -s 188.166.252.10 -j DROP
+-A ufw-before-input -s 185.112.83.212 -j DROP
+-A ufw-before-input -s 45.117.81.84 -j DROP
+-A ufw-before-input -s 2.56.57.60 -j DROP
+-A ufw-before-input -s 78.108.90.208 -j DROP
+-A ufw-before-input -s 104.248.156.29 -j DROP
+-A ufw-before-input -s 80.76.42.120 -j DROP
+-A ufw-before-input -s 193.230.189.123 -j DROP
+-A ufw-before-input -s 128.199.181.251 -j DROP
+-A ufw-before-input -s 188.166.226.232 -j DROP
+-A ufw-before-input -s 192.241.213.0/24 -j DROP
+-A ufw-before-input -s 192.241.222.0/24 -j DROP
+-A ufw-before-input -s 192.241.213.0/24 -j DROP
+-A ufw-before-input -s 192.241.219.0/24 -j DROP
+-A ufw-before-input -s 217.174.105.72 -j DROP
+-A ufw-before-input -s 46.8.19.0/24 -j DROP
+-A ufw-before-input -s 185.173.178.0/24 -j DROP
+-A ufw-before-input -s 31.41.44.126 -j DROP
+-A ufw-before-input -s 46.8.210.18 -j DROP
+-A ufw-before-input -s 92.62.115.177 -j DROP
+-A ufw-before-input -s 80.66.64.140 -j DROP
+-A ufw-before-input -s 87.251.79.93 -j DROP
+-A ufw-before-input -s 91.215.169.197 -j DROP
+-A ufw-before-input -s 193.108.113.140 -j DROP
+-A ufw-before-input -s 193.233.182.95 -j DROP
+-A ufw-before-input -s 185.233.0.52 -j DROP
+
+# allow all on loopback
+-A ufw-before-input -i lo -j ACCEPT
+-A ufw-before-output -o lo -j ACCEPT
+
+# quickly process packets for which we already have a connection
+-A ufw-before-input -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A ufw-before-output -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A ufw-before-forward -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+
+# drop INVALID packets (logs these in loglevel medium and higher)
+-A ufw-before-input -m conntrack --ctstate INVALID -j ufw-logging-deny
+-A ufw-before-input -m conntrack --ctstate INVALID -j DROP
+
+# ok icmp codes for INPUT
+-A ufw-before-input -p icmp --icmp-type destination-unreachable -j ACCEPT
+-A ufw-before-input -p icmp --icmp-type time-exceeded -j ACCEPT
+-A ufw-before-input -p icmp --icmp-type parameter-problem -j ACCEPT
+-A ufw-before-input -p icmp --icmp-type echo-request -j ACCEPT
+
+# ok icmp code for FORWARD
+-A ufw-before-forward -p icmp --icmp-type destination-unreachable -j ACCEPT
+-A ufw-before-forward -p icmp --icmp-type time-exceeded -j ACCEPT
+-A ufw-before-forward -p icmp --icmp-type parameter-problem -j ACCEPT
+-A ufw-before-forward -p icmp --icmp-type echo-request -j ACCEPT
+
+# allow dhcp client to work
+-A ufw-before-input -p udp --sport 67 --dport 68 -j ACCEPT
+
+#
+# ufw-not-local
+#
+-A ufw-before-input -j ufw-not-local
+
+# if LOCAL, RETURN
+-A ufw-not-local -m addrtype --dst-type LOCAL -j RETURN
+
+# if MULTICAST, RETURN
+-A ufw-not-local -m addrtype --dst-type MULTICAST -j RETURN
+
+# if BROADCAST, RETURN
+-A ufw-not-local -m addrtype --dst-type BROADCAST -j RETURN
+
+# all other non-local packets are dropped
+-A ufw-not-local -m limit --limit 3/min --limit-burst 10 -j ufw-logging-deny
+-A ufw-not-local -j DROP
+
+# allow MULTICAST mDNS for service discovery (be sure the MULTICAST line above
+# is uncommented)
+-A ufw-before-input -p udp -d 224.0.0.251 --dport 5353 -j ACCEPT
+
+# allow MULTICAST UPnP for service discovery (be sure the MULTICAST line above
+# is uncommented)
+-A ufw-before-input -p udp -d 239.255.255.250 --dport 1900 -j ACCEPT
+
+# don't delete the 'COMMIT' line or these rules won't be processed
+COMMIT
