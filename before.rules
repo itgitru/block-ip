@@ -17,6 +17,7 @@
 # End required lines
 
 #spamer ip
+-A ufw-before-input -s 89.253.238.126 -j DROP
 -A ufw-before-input -s 89.253.238.125 -j DROP
 -A ufw-before-input -s 45.8.126.20 -j DROP
 -A ufw-before-input -s 81.29.143.139 -j DROP
