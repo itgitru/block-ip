@@ -2,6 +2,18 @@
 # IP version: IPv4
 # Mode: spam ip
 #
+#vokot.ru
+194.116.162.24
+#rokog.ru
+192.162.246.245
+#kupoc.ru
+95.128.71.54
+#heson.ru
+91.230.211.148
+#kupoc.ru
+95.128.71.54
+#ryrym.ru
+45.8.124.29
 #dgp.mir.es
 103.121.72.89
 #sent2mail.com
