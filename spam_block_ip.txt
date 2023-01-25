@@ -2,6 +2,8 @@
 # IP version: IPv4
 # Mode: spam ip
 #
+#nindoz.ru
+94.103.183.234
 #vokot.ru
 194.116.162.24
 #rokog.ru
