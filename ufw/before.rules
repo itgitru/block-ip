@@ -18,6 +18,13 @@
 
 #spamer ip
 #upload it-git block ip
+-A ufw-before-input -s 94.103.183.234 -j DROP
+-A ufw-before-input -s 194.116.162.24 -j DROP
+-A ufw-before-input -s 192.162.246.245 -j DROP
+-A ufw-before-input -s 95.128.71.54 -j DROP
+-A ufw-before-input -s 91.230.211.148 -j DROP
+-A ufw-before-input -s 95.128.71.54 -j DROP
+-A ufw-before-input -s 45.8.124.29 -j DROP
 -A ufw-before-input -s 103.121.72.89 -j DROP
 -A ufw-before-input -s 178.249.70.34 -j DROP
 -A ufw-before-input -s 94.46.246.70 -j DROP
