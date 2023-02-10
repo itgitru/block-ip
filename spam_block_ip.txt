@@ -2,6 +2,36 @@
 # IP version: IPv4
 # Mode: spam ip
 #
+#gokoz.ru
+80.76.43.52
+#fihom.ru
+77.246.144.162
+#fedep.ru
+185.164.173.193
+#spameri@tiscali.it
+103.186.67.46
+#fesom.ru
+5.45.121.121
+#golow.ru
+185.156.177.74
+#tupom.ru
+194.150.235.142
+#ropom.ru
+95.163.25.100
+#vps-spamer
+185.177.218.51
+#spamer
+147.78.103.53
+#rohow.ru
+194.87.244.248
+#casom.ru
+194.226.139.81
+#popob.ru
+192.162.246.135
+#futuk.ru rokop.ru
+45.8.124.0/24
+#nezup.ru
+46.174.52.31
 #nindoz.ru
 94.103.183.234
 #vokot.ru
