@@ -2,6 +2,37 @@
 # IP version: IPv4
 # Mode: spam ip
 #
+#koloz.ru
+45.137.190.173
+#hccnet.nl
+213.136.31.236
+#guguc.ru
+46.19.67.189
+#fopog.ru
+192.162.246.175
+#fobep.ru
+91.230.211.69
+#asdop.ru
+45.140.19.89
+#directiq12.com
+185.51.77.137
+#ili-ili.net
+188.225.39.31
+#topkompy.ru
+45.131.46.218
+#un.org
+179.43.162.117
+#TencentCloud
+124.220.0.0/14
+#spamer
+88.209.254.139
+#spiridion.co.uk
+190.237.26.53
+#guguc.ru
+46.19.67.189
+#spam_net
+185.12.125.0/24
+185.12.127.0/24
 #gokoz.ru
 80.76.43.52
 #fihom.ru
