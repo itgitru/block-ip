@@ -2,6 +2,18 @@
 # IP version: IPv4
 # Mode: spam ip
 #
+#shop-mobi.ru
+62.173.141.130
+#freelymail.com
+189.219.246.0
+#dutuv.ru
+192.124.216.117
+#casom.ru
+109.237.106.16
+#kokum.ru
+193.163.203.20
+#wesek.ru
+46.8.61.48
 #rgbdxt.com
 52.178.92.212
 #mednufacture.com
