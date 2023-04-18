@@ -1,4 +1,23 @@
 #upload it-git block ip
+-A ufw-before-input -s 185.130.250.229 -j DROP
+-A ufw-before-input -s 95.213.226.121 -j DROP
+-A ufw-before-input -s 114.234.189.167 -j DROP
+-A ufw-before-input -s 23.26.245.34 -j DROP
+-A ufw-before-input -s 89.208.87.222 -j DROP
+-A ufw-before-input -s 83.137.158.133 -j DROP
+-A ufw-before-input -s 205.185.124.50 -j DROP
+-A ufw-before-input -s 194.67.65.203 -j DROP
+-A ufw-before-input -s 186.31.192.232 -j DROP
+-A ufw-before-input -s 95.128.71.80 -j DROP
+-A ufw-before-input -s 141.98.235.124 -j DROP
+-A ufw-before-input -s 24.152.119.0/24 -j DROP
+-A ufw-before-input -s 197.45.16.91 -j DROP
+-A ufw-before-input -s 118.69.161.22 -j DROP
+-A ufw-before-input -s 188.225.47.88 -j DROP
+-A ufw-before-input -s 82.202.194.8 -j DROP
+-A ufw-before-input -s 195.140.146.92 -j DROP
+-A ufw-before-input -s 45.133.235.0/24 -j DROP
+-A ufw-before-input -s 201.240.16.176 -j DROP
 -A ufw-before-input -s 62.173.141.130 -j DROP
 -A ufw-before-input -s 189.219.246.0 -j DROP
 -A ufw-before-input -s 192.124.216.117 -j DROP
