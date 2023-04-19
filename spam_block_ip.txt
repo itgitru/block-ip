@@ -2,6 +2,122 @@
 # IP version: IPv4
 # Mode: spam ip
 #
+#BL TELECOMUNICACOES E SERVICOS EIRELI
+189.36.128.0/22
+#tbrS.com
+119.115.251.0/24
+#psrp.asnobr.ru
+194.147.107.80
+#northwest.nhs.uk
+80.192.200.0/24
+#117.yyolf.net
+62.117.33.0/24
+#Claro NXT Telecomunicacoes Ltda
+191.176.0.0/14
+#kurier.atrucks.su
+5.189.237.0/24
+#Millicom Cable Honduras S.A. de C.V.
+161.0.192.0/19
+#veryzon.net
+61.58.81.0/24
+#xml.jcat.ru
+95.213.232.58
+#interl.net
+200.219.51.0/24
+#bellsouth.net
+109.183.92.0/24
+#dolphinmail.org
+179.7.226.124
+#striker.ottawa.on.ca
+125.212.156.0/24
+#MOBILY-BROADBAND-SA-L
+5.82.0.0/16
+#Synkro Solues em Informtica LTDA ME
+200.225.112.0/22
+#sjhsnet.org
+79.12.132.0/24
+#HU-VODAFONE-20110608
+176.63.0.0/16
+#mailcatch.com
+160.202.36.0/24
+#cdn164.mailna.us
+144.86.78.0/24
+#Globofiber Telecom
+45.225.16.0/22
+#mailcatch.com
+186.82.84.212
+#20boxme.org
+117.205.134.174
+#md-hotel.vip
+89.163.130.0/24
+#Master Net Telecom LTDA AS53223
+177.67.148.0/22
+#att.net
+154.56.136.29
+195.175.41.138
+#QWARTA-RU AS50214 rasuz.ru 
+185.12.126.0/24
+#African Network Information Center (AFRINIC)
+105.0.0.0/8
+196.0.0.0/8
+137.64.0.0/16
+#striker.ottawa.on.ca
+176.228.132.0/24
+#Gandalf Comunicaciones C.A. AS269750
+190.8.168.0/22
+#JustWeb Telecomunica es LTDA AS264552
+170.79.52.0/22
+#LANFIBRA TELECOMUNICACOES - EIRELI AS269684
+45.191.204.0/22
+#NETCENTER TELECOM AS269352
+45.185.12.0/22
+#USF DSLAM Central Pakistan
+182.186.0.0/16
+#Pakistan Telecommuication company limited
+39.32.0.0/16
+#ppetw.com
+103.3.220.0/24
+#adelpia.net
+191.7.64.0/22
+#mailcatch.com
+186.137.64.0/24
+#barak-online.net
+176.63.5.188
+#kartodrombig.ru
+78.153.130.72
+#veryzon.net
+45.224.204.0/24
+#cbsglobal.net
+2.59.199.0/24
+#holyquran.net
+105.245.32.0/24
+#gdnmail.net
+191.37.169.0/24
+#Claro NXT Telecomunicacoes Ltda
+191.188.0.0/14
+#cdn91.mailna.us
+190.135.50.0/24
+#porfmag.ru
+185.159.129.159
+#euskanet.net
+170.239.36.144
+#aubrey.net
+45.181.139.161
+#dolphinmail.org
+168.194.25.59
+#lackmail.net
+151.75.119.208
+#striker.ottawa.on.ca
+197.146.52.0/24
+103.57.85.0/24
+#rasuz.ru
+185.12.126.29
+#ameraserve.net
+177.84.148.56
+#raxav.ru
+212.46.47.7
+#guguc.ru tytob.ru
+193.163.203.0/24
 #mirapolismailer.ru
 185.130.250.229
 #xml.jcat.ru
