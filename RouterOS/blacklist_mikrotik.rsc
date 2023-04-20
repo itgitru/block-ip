@@ -168,7 +168,7 @@ add list=blacklist address=213.136.31.236 comment=IT-GIT
 add list=blacklist address=217.174.105.72 comment=IT-GIT
 add list=blacklist address=27.79.141.0/24 comment=IT-GIT
 add list=blacklist address=31.41.44.126 comment=IT-GIT
-add list=blacklist address=37.230.0.0/16 comment=IT-GIT
+add list=blacklist address=37.230.0.0/17 comment=IT-GIT
 add list=blacklist address=37.44.238.0/24 comment=IT-GIT
 add list=blacklist address=39.53.239.0/24 comment=IT-GIT
 add list=blacklist address=45.117.81.84 comment=IT-GIT

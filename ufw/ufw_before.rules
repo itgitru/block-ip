@@ -168,7 +168,7 @@
 -A ufw-before-input -s 217.174.105.72 -j DROP
 -A ufw-before-input -s 27.79.141.0/24 -j DROP
 -A ufw-before-input -s 31.41.44.126 -j DROP
--A ufw-before-input -s 37.230.0.0/16 -j DROP
+-A ufw-before-input -s 37.230.0.0/17 -j DROP
 -A ufw-before-input -s 37.44.238.0/24 -j DROP
 -A ufw-before-input -s 39.53.239.0/24 -j DROP
 -A ufw-before-input -s 45.117.81.84 -j DROP
