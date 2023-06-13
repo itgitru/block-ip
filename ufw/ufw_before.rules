@@ -2,6 +2,9 @@
 -A ufw-before-input -s 54.254.52.187 -j DROP
 -A ufw-before-input -s 67.22.223.9 -j DROP
 -A ufw-before-input -s 212.70.149.78 -j DROP
+-A ufw-before-input -s 109.206.242.27 -j DROP
+-A ufw-before-input -s 45.141.86.142 -j DROP
+-A ufw-before-input -s 217.144.103.55 -j DROP
 -A ufw-before-input -s 92.38.255.72 -j DROP
 -A ufw-before-input -s 89.22.173.201 -j DROP
 -A ufw-before-input -s 178.208.65.179 -j DROP
