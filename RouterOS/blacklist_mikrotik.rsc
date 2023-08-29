@@ -1,8 +1,15 @@
 /ip firewall address-list
+add list=blacklist address=187.103.124.20/30 comment=IT-GIT
+add list=blacklist address=190.114.32.0/19 comment=IT-GIT
+add list=blacklist address=79.131.0.0/16 comment=IT-GIT
+add list=blacklist address=179.62.0.0/16 comment=IT-GIT
+add list=blacklist address=62.232.0.0/16 comment=IT-GIT
 add list=blacklist address=54.254.52.187 comment=IT-GIT
 add list=blacklist address=67.22.223.9 comment=IT-GIT
 add list=blacklist address=212.70.149.78 comment=IT-GIT
 add list=blacklist address=46.148.40.0/24 comment=IT-GIT
+add list=blacklist address=185.87.50.203 comment=IT-GIT
+add list=blacklist address=188.72.77.116 comment=IT-GIT
 add list=blacklist address=45.130.151.237 comment=IT-GIT
 add list=blacklist address=88.151.114.28 comment=IT-GIT
 add list=blacklist address=45.141.84.0/24 comment=IT-GIT
